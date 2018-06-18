@@ -1,15 +1,4 @@
 
-/*//return the first element of the HTML collection
-var btn = document.getElementsByTagName("button")[0]; 
-
-//Add event listener syntax (event, functionname); 
-//click, mouse enter,mouseleave. 
-btn.addEventListener("mouseleave",function() {
-     console.log("click");                     
-                    }); 
-
-*/
-
 //Storing the button to an var. 
 var enter = document.getElementById("enter"); 
 //Storing the input field to var. 
