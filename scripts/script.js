@@ -19,19 +19,16 @@ function createListElement() {
     var li = document.createElement("li");  
     //Create button node
     var button = document.createElement("button"); 
-    //Append the value of the input field to the newly created LI element. 
+    //Append the value of the global variable for input field to the newly created LI element. 
     li.appendChild(document.createTextNode(input.value));
     //Append a text node with delete to the create button element. 
     button.appendChild(document.createTextNode("Delete")); 
-    
     //Append the new LI which includes the text node value captured to the parent UL element. 
     ul.appendChild(li); 
-    
     //Reset the input field. 
     input.value = "";
     //Appenend the a child button to the newly created LI element and bind it to an onclick event to remove the target LI tag from the dom. 
     li.appendChild(button).onclick = removeItem; 
-    
     bindevents();
 }; 
 
@@ -62,11 +59,14 @@ function taskDone(event) {
     targetClass.toggle("done"); 
 }
 
+//Function to remove the event targets parent
 function removeItem(event) {
-   var target = event.target; 
+    //obtain event target
+   var target = event.target;
+    //Obtain parent of target
    var parent = target.parentNode;
-    console.log(target); 
-    //Button, LI, UL Removed child which was defined as parent.
+    console.log(this.parentNode); 
+    //Target - Button < LI < UL Removed child which was defined as parent.
    target.parentNode.parentNode.removeChild(parent);
 }
 
@@ -74,7 +74,6 @@ function bindevents() {
 //Iterate over list and bind on click event. 
 var buttons = document.querySelectorAll(".deleteme"); 
 for(var x = 0; x < list.length ; x++) {
-    debugger;
    list[x].onclick = taskDone; 
    buttons[x].onclick = removeItem;     
 }
