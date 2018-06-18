@@ -14,17 +14,23 @@ function inputLength() {
     return input.value.length;  
 }; 
 
+function taskDone(event) {
+    var target = event.target;
+    var targetClass = event.target.classList;
+    targetClass.toggle("done"); 
+}
+
 function createListElement() {
     //Create LI node
     var li = document.createElement("li");  
     //Create button node
     var button = document.createElement("button"); 
     //Append the value of the global variable for input field to the newly created LI element. 
-    li.appendChild(document.createTextNode(input.value));
+    li.appendChild(document.createTextNode(input.value)); 
     //Append a text node with delete to the create button element. 
     button.appendChild(document.createTextNode("Delete")); 
     //Append the new LI which includes the text node value captured to the parent UL element. 
-    ul.appendChild(li); 
+    ul.appendChild(li).onclick = taskDone; 
     //Reset the input field. 
     input.value = "";
     //Appenend the a child button to the newly created LI element and bind it to an onclick event to remove the target LI tag from the dom. 
@@ -51,12 +57,6 @@ enter.addEventListener("click", addClick);
 //Passing the event into the function to access keycode event property. 
 input.addEventListener("keypress", addKey); 
 
-
-function taskDone(event) {
-    var target = event.target;
-    var targetClass = event.target.classList;
-    targetClass.toggle("done"); 
-}
 
 //Function to remove the event targets parent
 function removeItem(event) {
