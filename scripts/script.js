@@ -29,7 +29,6 @@ function createListElement() {
     input.value = "";
     //Appenend the a child button to the newly created LI element and bind it to an onclick event to remove the target LI tag from the dom. 
     li.appendChild(button).onclick = removeItem; 
-    bindevents();
 }; 
 
 function addClick() {
