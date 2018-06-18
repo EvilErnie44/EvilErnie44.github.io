@@ -65,7 +65,6 @@ function removeItem(event) {
    var target = event.target;
     //Obtain parent of target
    var parent = target.parentNode;
-    console.log(this.parentNode); 
     //Target - Button < LI < UL Removed child which was defined as parent.
    target.parentNode.parentNode.removeChild(parent);
 }
