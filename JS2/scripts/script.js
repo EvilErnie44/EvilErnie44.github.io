@@ -62,6 +62,7 @@ input.addEventListener("keypress", addKey);
 function removeItem(event) {
     //obtain event target
    var target = event.target;
+    console.log(target);
     //Obtain parent of target
    var parent = target.parentNode;
     //Target - Button < LI < UL Removed child which was defined as parent.
