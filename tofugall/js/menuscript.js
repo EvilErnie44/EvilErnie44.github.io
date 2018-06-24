@@ -34,14 +34,19 @@ $(document).ready(function(){
   });
 });
 
-window.onscroll = function(){
-    let screenposition = window.pageYOffset; 
-    const element = document.querySelector("#toTopBtn");
-    if (screenposition>50) {
+
+//ECSMA 6 Function declaration.
+
+window.onscroll = () => {
+  
+  	let screenPosition = window.pageYOffset; 	
+    const element = document.querySelector("#toTopBtn"); 
+    if (screenPosition>50) {
     element.classList.remove("none"); }
         else {
             element.classList.add("none"); 
         }
 }
+
 
 
