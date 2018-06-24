@@ -501,12 +501,12 @@ h1 {
 		
 	}
 	#grid-item4 {
-		grid-row: 7/8;
+		grid-row: 6/7;
 		grid-column: 1/9;
 		
 	}
 	#grid-item5 {
-		grid-row: 8/11;
+		grid-row: 7/11;
 		grid-column: 1/9;
 	}
 	#topNav {
@@ -533,6 +533,13 @@ h1 {
     #gridgall {
 		margin-left: 390px;
 	}
+}
+
+@media only screen and (max-width:350px){
+
+    .fadeout li{
+        padding:0.8em; 
+    }
 }
 
 html,
