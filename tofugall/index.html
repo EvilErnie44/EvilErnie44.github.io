@@ -9,11 +9,13 @@
       <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">      
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src = "js/menuscript.js"></script>
    </head>
    <body>
-       
+      
+
       <nav id="wrapper">
          <div class="sideSpacer">
             <div id="logoCont">
@@ -25,7 +27,7 @@
                   <a href="#apparel">
                      <li>Apparel</li>
                   </a>
-                  <a href="#gal">
+                  <a href="#gridgall">
                      <li>Gallery</li>
                   </a>
                   <a href="#contactmetitle">
@@ -55,23 +57,25 @@
          </div>
          <ul = class = "fadeout">
             <li>
-               Apparel    
+               <a href = "#apparel">Apparel</a>     
             </li>
             <li>
-               Gallery    
+                <a href = "#gridgall">Gallery</a>  
             </li>
             <li>
-               Contact     
+                <a href = "#contact">Contact</a>    
             </li>
             <li>
-               Etsy Store     
+                <a href = "#shop">Shop</a>
             </li>
          </ul>
       </nav>
        
       <div id = "parallax">
       </div>
-      <div id = "grid">
+       
+       <div id = "toTopBtn" class = "none"> <a href = "#gridgall"><h1>&#8673;</h1></a></div>
+      <div id = "gridgall">
          <div id = "grid-item1">
             <h1>Commissions</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, felis ut tempus pulvinar, lorem urna imperdiet velit, ac semper lectus dolor at odio. Proin vitae sapien ex. Sed at varius diam. Fusce sit amet nulla lacinia, sodales leo eu, porta urna. Vestibulum rhoncus facilisis nisl vel dapibus. Vestibulum mollis egestas bibendum. Curabitur fringilla felis vitae nunc efficitur viverra. Nunc eleifend faucibus sodales. Donec libero magna, efficitur vel nisi non, tempus tincidunt quam.</p>
@@ -82,7 +86,13 @@
          <div id = "grid-item2">
             <h1>Warcraft Chibis</h1>
             <br>
-            <p>Sed commodo turpis in nulla ultricies, ac volutpat turpis tristique. Sed a turpis dictum, posuere arcu sit amet, sodales eros. Maecenas in eleifend lacus. Phasellus mattis eros et justo egestas pharetra. Etiam ac tortor ut orci dapibus laoreet.</p>
+            <p>A cute, big-headed, chibi portrait of your WoW character for use as profile images, icons or whatever else!</p>
+             <p><i>In order to produce a custom chibi I will require the following:</i></p>
+            <ul id = "chibiList">
+            <li>Battle Net armory link to the charecter.</li>
+            <li>Wowhead.com link to any armours which the charecter is to be drawn in.</li> 
+            <li>If you would like a simple hunter pet or companion with your chibi please include a picture link or a good description. (limit to 1 per chibi - more can be drawn at an additional cost)</li>  
+            </ul>
          </div>
           
          <div id = "grid-item3">
@@ -108,8 +118,15 @@
             <img src = "images/Gallery/icongall4.png" class = "imgOriginalTrans">
             <img src = "images/Gallery/icongall5.png" class = "imgOriginalTrans">
             <img src = "images/Gallery/icongall2.png" class = "imgOriginalTrans">
+            <img src = "images/Gallery/icongall1.png" class = "imgOriginalTrans">
+            <img src = "images/Gallery/icongall6.png" class = "imgOriginalTrans">
+            <img src = "images/Gallery/icongall3.png" class = "imgOriginalTrans">
+            <img src = "images/Gallery/icongall4.png" class = "imgOriginalTrans">
+            <img src = "images/Gallery/icongall5.png" class = "imgOriginalTrans">
+            <img src = "images/Gallery/icongall2.png" class = "imgOriginalTrans">
          </div>
           
       </div>
+           
    </body>
 </html>
