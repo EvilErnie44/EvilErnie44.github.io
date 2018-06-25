@@ -288,6 +288,9 @@ h1 {
 
 #smWrap {
 	width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
 }
 
 #smItems {
@@ -388,6 +391,7 @@ h1 {
 	transition: height 1s, opacity 1s;
 	background-color: white;
 	text-align: center; 
+    font-weight: bold;
 }
 
 .fadeout li {
