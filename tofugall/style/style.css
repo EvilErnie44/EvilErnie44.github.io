@@ -7,7 +7,7 @@
 #gridgall {
 	display: grid;
 	grid-gap: 5px 5px;
-    width:100%;
+    max-width: 1500px;
 }
 
 #apparelGrid {
@@ -145,7 +145,7 @@ h1 {
 
 #grid-item5 {
 	grid-row: 7/8;
-	background-color: aliceblue;
+	background-color: rgba(255,255,255 ,0.75);
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -203,8 +203,8 @@ h1 {
 	text-align: center;
 	margin: 10px 5px 10px 0px;
 	padding: 1%;
-	color: white;
-	opacity: 0.6;
+	color: black;
+	opacity: 0.8;
 	transition: background-color 0.25s, opacity 0.25s ease-in;
 	border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
@@ -242,7 +242,7 @@ h1 {
 	left: 0;
 	height: 100vh;
 	width: 220px;
-	background-color: hsla(36, 100%, 50%, 0.80);
+	background: linear-gradient(to bottom, rgba(210, 13, 13, 0.18), rgb(251, 162, 39));
 	z-index: 2;
 	transition: width .5s ease-out;
 }
@@ -291,6 +291,12 @@ h1 {
     position: absolute;
     bottom: 10px;
     left: 0px;
+}
+
+#smWrap h1 {
+    font-family: 'Shadows Into Light Two', cursive;
+    color:black; 
+    opacity: 0.8; 
 }
 
 #smItems {
