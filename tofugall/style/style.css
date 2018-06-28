@@ -8,6 +8,12 @@ h1 {
     color:rgba(69, 69, 69, 1);
 }
 
+h3 {
+    text-align: center; 
+    color:rgba(69, 69, 69, 1);
+    padding: 10px;
+}
+
 .alignImg {
     position: relative; 
     margin:5%;  
@@ -39,6 +45,9 @@ h1 {
 #appGridall div {
     background: rgba(222,148,72 ,0.26);
     border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 #appTitle{
@@ -174,6 +183,9 @@ h1 {
 	flex-wrap: wrap;
 }
 
+#gridLogo {
+}
+
 .icon {
 	max-width: 80%;
 	margin: 0 auto;
@@ -225,7 +237,7 @@ h1 {
 	text-align: center;
 	margin: 10px 5px 10px 0px;
 	padding: 1%;
-	color: black;
+    color: rgba(69, 69, 69, 0.9);
 	opacity: 0.8;
 	transition: background-color 0.25s, opacity 0.25s ease-in;
 	border-radius: 10px 10px 10px 10px;
@@ -233,8 +245,12 @@ h1 {
 	-webkit-border-radius: 10px 10px 10px 10px;
 	width: 98%;
 	font-size: 28px;
-	font-family: 'Shadows Into Light Two', cursive;
 }
+
+#navWrapper ul li:hover {
+    color:white; 
+}
+
 
 #navWrapper ul a {
 	text-decoration: none;
@@ -532,6 +548,10 @@ h1 {
         grid-gap 5px 5px; 
     }
     
+    #appGridall div {
+        width: 90%; 
+    }
+    
     #appTitle{
         grid-column: 2/4; 
     }
@@ -569,7 +589,7 @@ h1 {
 	#gridgall {
 		width: 70%;
 		grid-template-columns: repeat(8, 1fr);
-		grid-template-rows: repeat(10, 1fr);
+		grid-template-rows: repeat(9, 1fr);
 		grid-gap: 5px 5px;
 		margin-left: 320px;
 	}
@@ -593,7 +613,7 @@ h1 {
 		
 	}
 	#grid-item5 {
-		grid-row: 7/11;
+		grid-row: 7/10;
 		grid-column: 1/9;
 	}
 	#topNav {
