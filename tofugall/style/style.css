@@ -4,18 +4,61 @@
     padding:0;
 }
 
+h1 {
+    color:rgba(69, 69, 69, 1);
+}
+
+.alignImg {
+    position: relative; 
+    margin:5%;  
+}
+
 #gridgall {
 	display: grid;
 	grid-gap: 5px 5px;
     max-width: 1500px;
+    overflow: hidden; 
 }
 
-#apparelGrid {
-
+#appGridall {
+	display: grid;
+	grid-gap: 5px 5px;
+    max-width: 1500px;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
-#apparelGrid h1 {
-padding: 10px;     
+#appGridall div h2 {
+    text-align: center; 
+    position: relative;
+    top: 20px;
+    padding: 10px; 
+    color:rgba(69, 69, 69, 1); 
+}
+
+#appGridall div {
+    background: rgba(222,148,72 ,0.26);
+    border-radius: 8px;
+}
+
+#appTitle{
+    padding: 10px; 
+}
+
+#appgrid-item1 {
+    grid-row: 2/4; 
+}
+
+#appgrid-item2 {
+    grid-row: 4/6; 
+}
+
+#appgrid-item3 { 
+    grid-row: 6/8; 
+}
+
+#appgrid-item4 {
+    grid-row: 8/10; 
 }
 
 a {
@@ -37,7 +80,20 @@ a {
     padding:4px; 
 }
 
+.clothingItem {
+    width: 90%; 
+    transition: all 0.5s; 
+}
 
+.clothingItem:hover {
+    transform:scale(1.1); 
+}
+
+.detailsCont {
+    position: relative; 
+    left: 100px; 
+    top:50px; 
+}
 
 #gridgall div {
     border-radius: 8px; 
@@ -67,40 +123,6 @@ h1 {
 	animation-timing-function: ease-in-out;
 }
 
-#grid-item1 h1 {
-	position: relative;
-	animation-name: fadeinright;
-	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
-}
-
-@keyframes fadeinleft {
-	0% {
-		left: -50px;
-		opacity: 0;
-	}
-	80% {
-		left: 10px;
-	}
-	100% {
-		left: 0px;
-		opacity: 1;
-	}
-}
-
-@keyframes fadeinright {
-	0% {
-		left: 50px;
-		opacity: 0;
-	}
-	80% {
-		left: -10px;
-	}
-	100% {
-		left: 0px;
-		opacity: 1;
-	}
-}
 
 #grid-item1>img {
 	position: relative;
@@ -117,7 +139,7 @@ h1 {
 }
 
 #grid-item2 p {
-	padding: 0.5em;
+	padding: 1em;
 	display: flex;
 }
 
@@ -255,6 +277,21 @@ h1 {
     margin-left: 10%;
 }
 
+.toStore{
+    text-align: center;
+    position: relative; 
+    bottom:20px;
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+    padding: 0.7em; 
+    background-color: hsla(30, 69%, 57%, 1);
+    transition: all .5s; 
+    font-size: 1em;
+}
+
 #flexcont {
 	display: block;
 }
@@ -324,7 +361,7 @@ h1 {
     align-items: center;
 	width: 100%;
 	height: 60px;
-	background-color: hsla(36, 100%, 50%, 0.80);
+	background: linear-gradient(to bottom, rgba(210, 13, 13, 0.18), rgb(251, 162, 39));
     border-bottom-left-radius: 8px; 
     border-bottom-right-radius: 8px; 
 }
@@ -442,7 +479,8 @@ h1 {
 }
 
 #toTopBtn>a>h1 {
-    padding: 0px; 
+    padding: 0px;
+    color:black; 
 }
 
 #toTopBtn:hover {
@@ -488,13 +526,52 @@ h1 {
 
 /* Desktop */
 
+@media only screen and (min-width: 800px) {
+    #appGridall {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap 5px 5px; 
+    }
+    
+    #appTitle{
+        grid-column: 2/4; 
+    }
+    
+    #appgrid-item1 {
+        grid-row: 2/3; 
+        grid-column: 1/3
+    }
+    
+    #appgrid-item2 {
+        grid-row: 2/3; 
+        grid-column: 3/5
+    }
+    
+    #appgrid-item3 {
+        grid-row: 3/5; 
+        grid-column: 1/3;
+    }
+    
+    #appgrid-item4 {
+        grid-row: 3/5; 
+        grid-column: 3/5;
+    }
+    
+    p {
+	font-size: 1.2em; 
+}
+    
+    li {
+        font-size: 1.2em;
+    }
+}
+
 @media only screen and (min-width: 1500px) {
 	#gridgall {
 		width: 70%;
 		grid-template-columns: repeat(8, 1fr);
 		grid-template-rows: repeat(10, 1fr);
 		grid-gap: 5px 5px;
-		margin-left: 30%;
+		margin-left: 320px;
 	}
 	#grid-item1 {
 		grid-row: 1/6;
@@ -540,12 +617,21 @@ h1 {
     #gridgall {
 		margin-left: 320px;
 	}
+    
+    #appGridall {
+        width:70%; 
+        margin-left: 320px;
+    }
 }
 
 @media only screen and (min-width: 1600px) {
     #gridgall {
 		margin-left: 390px;
 	}
+    
+        #appGridall { 
+        margin-left: 390px;
+    }
 }
 
 @media only screen and (max-width:350px){
