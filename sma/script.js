@@ -4,3 +4,8 @@ $('.menu').on("click", function(){
     })
 })
 
+$(document).ready(function(){
+$('.inl').on("click", function(){
+    $('.footer-list-items').toggleClass('showitem'); 
+    })
+})

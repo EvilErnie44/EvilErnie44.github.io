@@ -57,11 +57,50 @@ ul li a {
     display: none;
 }
 
+#footer{
+    background-color: #282e34; 
+    height: 300px; 
+}
+
+#footer p {
+    margin: 0px;
+}
+
 #logoimage {
     background: hsla(0, 0%, 100%, 0.90); 
     width: 500px; 
     margin: 0 auto; 
     padding-top: 20px; 
+}
+
+.list-item {
+    width: 80%; 
+    text-align: left; 
+    justify-content: space-between;
+    display: flex; 
+    margin:0px auto; 
+    color: white; 
+    padding: 5px; 
+}
+
+.inl {
+    display:inline-block; 
+}
+
+.footer-list-items{
+    text-align: left; 
+    font-size: 14px;
+    display:  none; 
+    padding: 5px;
+    width:80%;
+}
+
+.showitem {
+    display: block; 
+}
+
+.footer-list-items li {
+    padding: 0px; 
 }
 
 #teamGrid {
