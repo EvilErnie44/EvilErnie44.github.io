@@ -81,7 +81,7 @@ ul li a {
 }
 
 .inl {
-    display:inline-block; 
+    float: right;
 }
 
 .footer-list-items{
@@ -261,6 +261,20 @@ nav ul li {
 
     padding: 50px 25px;
         
+}
+    
+}
+
+@media (min-width:1000px) {
+    
+    .footer-lists {
+    width: 33%; 
+    display: inline-flex; 
+    margin: 0 auto;
+}
+    
+    .list-items {
+    width: 100%; 
 }
     
 }

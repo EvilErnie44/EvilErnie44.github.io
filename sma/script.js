@@ -5,7 +5,19 @@ $('.menu').on("click", function(){
 })
 
 $(document).ready(function(){
-$('.inl').on("click", function(){ 
-    $('.footer-list-items').toggleClass('showitem'); 
+$('.inl1').on("click", function(){ 
+    $('.list1').toggleClass('showitem'); 
+    })
+})
+
+$(document).ready(function(){
+$('.inl2').on("click", function(){ 
+    $('.list2').toggleClass('showitem'); 
+    })
+})
+
+$(document).ready(function(){
+$('.inl3').on("click", function(){ 
+    $('.list3').toggleClass('showitem'); 
     })
 })
