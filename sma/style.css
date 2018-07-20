@@ -40,10 +40,10 @@ ul li a {
 }
 
 .menu span {
- position: absolute; 
- left: 0; 
- top: 0; 
- padding: 12px; 
+     position: absolute; 
+     left: 0; 
+     top: 0; 
+     padding: 12px; 
 }
 
 
@@ -59,7 +59,6 @@ ul li a {
 
 #footer{
     background-color: #282e34; 
-    height: 300px; 
 }
 
 #footer p {
@@ -76,8 +75,6 @@ ul li a {
 .list-item {
     width: 80%; 
     text-align: left; 
-    justify-content: space-between;
-    display: flex; 
     margin:0px auto; 
     color: white; 
     padding: 5px; 
@@ -90,7 +87,7 @@ ul li a {
 .footer-list-items{
     text-align: left; 
     font-size: 14px;
-    display:  none; 
+    display: none; 
     padding: 5px;
     width:80%;
 }
@@ -126,8 +123,8 @@ ul li a {
 
 
 .section {
- text-align: center; 
- padding:50px 80px; 		
+     text-align: center; 
+     padding:50px 80px; 		
 }
 
 .section-light{
