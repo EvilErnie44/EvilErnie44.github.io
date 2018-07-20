@@ -89,7 +89,7 @@ ul li a {
     font-size: 14px;
     display: none; 
     padding: 5px;
-    width:80%;
+    width:100%;
 }
 
 .showitem {
@@ -97,6 +97,7 @@ ul li a {
 }
 
 .footer-list-items li {
+    display: block; 
     padding: 0px; 
 }
 
@@ -217,12 +218,12 @@ letter-spacing: 1px;
 .toggle{
         display: block;
     }
-ul {
+nav ul {
         width: 100%;
         max-height: 0;
         transition: max-height 0.5s ease-in;
     }
-ul li {
+nav ul li {
         display: block; 
         
     }
