@@ -21,3 +21,5 @@ $('.inl3').on("click", function(){
     $('.list3').toggleClass('showitem'); 
     })
 })
+
+$(document).ready(function(){$('.fa-sort-down').click(function(){ $("html, body").animate({ scrollTop: $(document).height() }); });});
