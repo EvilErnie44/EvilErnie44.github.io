@@ -45,7 +45,7 @@ h3 {
 #appGridall div {
     background: rgba(222,148,72 ,0.26);
     border-radius: 8px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 25px;
 }
@@ -96,6 +96,13 @@ a {
 
 .clothingItem:hover {
     transform:scale(1.1);
+}
+
+#contactFormCont p {
+padding: 1em; 
+text-align: center; 
+width: 300px;
+margin: 0 auto; 
 }
 
 .detailsCont {
@@ -280,7 +287,7 @@ h1 {
 	left: 0;
 	height: 100vh;
 	width: 220px;
-	background: linear-gradient(to bottom, rgba(210, 13, 13, 0.18), rgb(251, 162, 39));
+	background-color: rgba(222,148,72 ,0.26);
 	z-index: 2;
 	transition: width .5s ease-out;
 }
@@ -299,13 +306,27 @@ h1 {
     bottom:20px;
     display: block;
     margin: 0 auto;
+    color: #474649;  
     border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
 	-webkit-border-radius: 10px 10px 10px 10px;
     padding: 0.7em;
-    background-color: hsla(30, 69%, 57%, 1);
     transition: all .5s;
     font-size: 1em;
+    font-weight: 600; 
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    
+}
+
+.toStore:hover {
+    background-color: hsla(19, 98%, 50%, 1); 
+    color: #ffffff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    transform: scale(1.1); 
 }
 
 #flexcont {
@@ -391,7 +412,7 @@ h1 {
 	right: 2px;
 	top: 2px;
 	max-height: 80px;
-	max-width: 80px;
+	max-width: 70px;
 	opacity: 0.7;
 	transition: all 0.5s;
 }
@@ -498,6 +519,30 @@ h1 {
 
 #toTopBtn:hover {
     opacity: 1;
+}
+
+#textArea {
+width: 300px; 
+margin: 0px auto;
+margin-bottom:30px;
+-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+#form {
+display: flex; 
+flex-flow: column; 
+align-items: center; 
+}
+
+#form input {
+width: 300px; 
+padding: 1em; 
+margin: 10px; 
+-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);    
 }
 
 .none {
