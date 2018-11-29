@@ -1,0 +1,27 @@
+<h2>My Heroes</h2>
+<ul class="heroes"> 
+    <!--Create a list item for each hero isnide of hero, for in/of loop. -->
+    <!--Then binding an on click event to the list item which has had the 
+    iterated hero passed into it -->
+  <li *ngFor = "let hero of heroes" 
+  (click) = "onSelect(hero)"
+  [class.selected]="hero === selectedHero">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+<!--if select hero has been called, this is rendered. 
+    the selectedHero name and id are passed in. 
+    Then as we not have THIS for hero the databind effects the target hero from the 
+    object. 
+-->
+<div *ngIf="selectedHero">
+    <h2>{{selectedHero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedHero.id}}</div>
+    <div>
+        <label>name:
+            <!-- ngModel is used for databinding to object. -->
+            <input [(ngModel)]="selectedHero.name" placeholder="name">
+        </label>
+    </div>
+</div>
