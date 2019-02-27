@@ -1,0 +1,303 @@
+* {
+   border: 0px; 
+   margin: 0px; 
+   box-sizing: border-box;  
+}
+
+html{
+    font-size: 10px;
+}
+
+h2 {
+    display: block; 
+}
+
+body {
+    line-height: 1.7; 
+    color: #e5e5e5; 
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5; 
+    position:relative;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden; 
+}
+
+header {
+    height: 95vh; 
+    width: 100vw; 
+    background-image: linear-gradient(rgba(0,94,184,0.7),rgba(0,94,184,0.5) ), url(../IMG/homeimg.png); 
+    background-size: cover;  
+    background-position: bottom; 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%); 
+    z-index: 1; 
+    position: relative; 
+}
+
+nav{
+    width: 100vw; 
+}
+
+nav ul {
+    list-style: none; 
+    position: absolute; 
+    right:0;
+    margin-right: 1.5rem;  
+    display: inline-flex;
+    font-size: 1.2rem;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0.5rem;
+    cursor: pointer;  
+    opacity: 0.5; 
+    letter-spacing: 0.2rem; 
+}
+
+nav ul li:hover {
+opacity:0.9; 
+}
+
+.inline {
+    display: inline; 
+    height: 100%; 
+}
+
+.content {
+    color:#e5e5e5;    
+    background-color: rgba(0,94,184,0.6); 
+    text-align: center; 
+    font-size: 2rem; 
+    padding: 2rem; 
+    margin-top: 3rem; 
+}
+
+.content p span {
+    font-weight: bold; 
+}
+
+
+.godown{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    color: #005eb8; 
+}
+.godown div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+    font-size: 2rem;  
+    text-align: center; 
+    background-color: orange; 
+    width: 4rem; 
+    height: 4rem; 
+    z-index: 100; 
+    position: absolute; 
+    bottom: 10%;
+    opacity: 0.4; 
+    transition: all .5s; 
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+
+.godown div:hover {
+    transform: translateY(-.3rem); 
+}
+
+.godown div:active {
+    transform: translateY(-.1rem); 
+}
+
+.godown div:hover {
+   opacity: 0.8; 
+}
+
+.textcontainer {
+    position: absolute; 
+    left: 3rem; 
+    transform: translateY(-20%);
+}
+
+.textcontainer span { 
+    font-weight: 400; 
+    letter-spacing: .01rem;     
+}
+.lowertext{
+    transform: translateX(2rem); 
+}
+
+#logoinline {
+    display: inline-block; 
+}
+
+#menuicon { 
+    position: absolute;
+    font-size: 3rem; 
+    right: 0rem; 
+    margin-right: 1.5rem; 
+}
+
+.textright {
+    transform: translateX(2rem);
+    font-weight: 200;
+    opacity: 1; 
+    transition: all 1s; 
+}
+
+.skew {
+    height: 100vh; 
+    width: 100vw; 
+    transform: skewY(10deg); 
+    margin-top: -5rem;
+}
+
+section div {
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    position: relative;  
+    z-index: 10; 
+    font-size: 2rem; 
+}
+
+#sitewrapper{
+    width: 100vw; 
+}
+
+section{
+    
+}
+/* Hook up transitions */
+.textright span { 
+}
+
+#logo {
+    max-width: 8rem; 
+    margin: 1rem; 
+}
+
+#menucont {
+    width: 100vw; 
+    position: relative; 
+}
+
+
+/*Burger Menus CSS */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .overlay a {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 3.6rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    right: 2rem;
+    font-size: 4rem;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .menuitems {
+        display: none; 
+    }
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    #menuicon {
+        display: none; 
+    }
+}
+
+
+@media only screen and (min-width: 500px) {
+    html{
+        font-size: 15px;
+    }
+
+    .textcontainer {
+        left: 5rem;
+    }
+
+    .godown div{
+        width: 2rem; 
+        height: 2rem; 
+        font-size: 1.5rem;  
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+    html{
+        font-size: 20px;
+    }
+
+    .textcontainer {
+        left: 5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    html{
+        font-size: 22px;
+    }
+
+    .textcontainer {
+        left: 7rem;
+    }
+
+    .godown div{
+        font-size: 1.5rem; 
+        bottom: 15%;
+    }
+
+    header{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); 
+    }
+}
