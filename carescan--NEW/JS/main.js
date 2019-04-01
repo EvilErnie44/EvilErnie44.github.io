@@ -6,7 +6,6 @@ function openNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
-
   window.onscroll = function() {stickyBar()};
   window.onload = function() {stickyBar()}
 
@@ -37,3 +36,35 @@ function openNav() {
     }
   }
   
+  //Jquery scroll too. 
+  $(document).ready(function(){
+    
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+
+        var offset = 100; 
+
+        console.log(hash) ; 
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
+
+  $("a[href='#to-top-anchor']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
